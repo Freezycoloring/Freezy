@@ -8,13 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf5ea;--panel:#fffdf8;--ink:#4c301c;--mute:#7a6452;--line:#ecdcc6;--teal:#00c5d1;--tealink:#2b1a0d;--purple:#8a6bb8;--green:#3f9080;--coral:#e98f7c;--sand:#e3b98a;
+:root{--bg:#fbf5ea;--panel:#fffdf8;--ink:#4c301c;--mute:#7a6452;--line:#ecdcc6;--teal:#60897d;--tealink:#1f130a;--purple:#8a6bb8;--green:#3f9080;--coral:#e98f7c;--sand:#e3b98a;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1710;--panel:#2a2016;--ink:#f3e6d3;--mute:#c4ad94;--line:#46372a}}
 :root[data-theme="dark"]{--bg:#1f1710;--panel:#2a2016;--ink:#f3e6d3;--mute:#c4ad94;--line:#46372a}
 *{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background-image:radial-gradient(circle at 12% 8%,rgba(0,197,209,.13),transparent 38%),radial-gradient(circle at 92% 4%,rgba(138,107,184,.14),transparent 34%)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background-image:radial-gradient(circle at 12% 8%,rgba(96,137,125,.16),transparent 38%),radial-gradient(circle at 92% 4%,rgba(138,107,184,.14),transparent 34%)}
 main{max-width:1000px;margin:0 auto;padding:26px 18px 44px;display:grid;gap:26px;grid-template-columns:minmax(0,330px) minmax(0,1fr);align-items:start}
 @media (max-width:760px){main{grid-template-columns:1fr}}
 .hero{grid-column:1/-1;display:flex;align-items:center;gap:18px}
@@ -74,7 +74,7 @@ function draw(c,W,H,n){
   c.fillStyle='#fff';c.fillRect(0,0,W,H);
   c.fillStyle='#000';c.strokeStyle='#000';c.lineCap='butt';
   const m=W*.09;
-  c.fillStyle='#00c5d1';c.textAlign='center';c.font=`${W*.062}px ${FONT}`;
+  c.fillStyle='#60897d';c.textAlign='center';c.font=`${W*.062}px ${FONT}`;
   c.fillText('Colour Chart',W/2,H*.085);
   c.fillStyle='#4c301c';c.textAlign='left';c.font=`${W*.027}px ${FONT}`;
   c.fillText(n+' Color Swatch',m,H*.1);
